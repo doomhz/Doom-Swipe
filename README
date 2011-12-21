@@ -19,3 +19,13 @@ new DoomSwipe(
     }
   }
 );
+
+
+Trigger a swipe event in Selenium:
+
+selenium.getEval("document.getElementById('swipeable').swipe("LEFT")");
+
+
+With Capybara:
+
+page.execute_script("document.getElementById('swipeable').swipe("LEFT")")
