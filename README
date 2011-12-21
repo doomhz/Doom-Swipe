@@ -1,0 +1,21 @@
+Doom Swipe
+
+Swipe event handler for touch devices.
+
+Example:
+
+new DoomSwipe( document.getElementById('swipeable'), { onSwipe: function (swipeType) { alert(swipeType); } } );
+
+
+All options example:
+
+new DoomSwipe(
+  document.getElementById('swipeable'),
+  {
+    threshhold: 20,
+    timeout:    250,
+    onSwipe:    function (swipeType, horizontalSwipedDistance, verticalSwipedDistance) {
+      alert(swipeType);
+    }
+  }
+);
