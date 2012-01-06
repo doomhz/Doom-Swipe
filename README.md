@@ -27,11 +27,11 @@ new DoomSwipe(
 ## Trigger a swipe event in Selenium:
 
 ```javascript
-selenium.getEval("document.getElementById('swipeable').swipe("LEFT")");
+selenium.getEval("document.getElementById('swipeable').swipe('LEFT')");
 ```
 
 ## With Capybara:
 
 ```ruby
-page.execute_script("document.getElementById('swipeable').swipe("LEFT")")
+page.execute_script("document.getElementById('swipeable').swipe('LEFT')")
 ```
