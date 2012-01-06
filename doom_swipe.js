@@ -128,9 +128,9 @@ DoomSwipe.prototype = {
 
     // determine the swipe type by the swiped distance
     if (Math.abs(deltaX) > Math.abs(deltaY)) {
-      swipeType = deltaX < 0 ? "RIGHT" : "LEFT";
+      swipeType = deltaX < 0 ? "LEFT" : "RIGHT";
     } else {
-      swipeType = deltaY < 0 ? "DOWN"  : "UP";      
+      swipeType = deltaY < 0 ? "UP"   : "DOWN";      
     }
 
     return swipeType;
