@@ -2,13 +2,13 @@
 
 Swipe event handler for touch devices.
 
-## Example:
+### Example:
 
 ```javascript
 new DoomSwipe( document.getElementById('swipeable'), { onSwipe: function (swipeType) { alert(swipeType); } } );
 ```
 
-## All options example:
+### All options example:
 
 ```javascript
 new DoomSwipe(
@@ -24,14 +24,22 @@ new DoomSwipe(
 ```
 
 
-## Trigger a swipe event in Selenium:
+### Trigger a swipe event in Selenium:
 
 ```javascript
 selenium.getEval("document.getElementById('swipeable').swipe('LEFT')");
 ```
 
-## With Capybara:
+### With Capybara:
 
 ```ruby
 page.execute_script("document.getElementById('swipeable').swipe('LEFT')")
+```
+
+or you can use the SwipeHelpers:
+
+```ruby
+When /^I swipe the page to the right$/ do
+  swipe("RIGHT")
+end
 ```
